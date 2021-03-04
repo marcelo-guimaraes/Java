@@ -2,7 +2,42 @@ public class Quiz {
 
     public static void main(String[] args) {
 
-        MultipleChoiceQuestion question1 = new MultipleChoiceQuestion(
+        Question questiontf1 = new TrueFalseQuestion(
+                "The unicorn is the national animal of Scotland",
+                "FALSE"
+        );
+
+        questiontf1.check();
+
+        Question questiontf2 = new TrueFalseQuestion(
+                "There are two parts of the body that can't heal themselves",
+                "TRUE"
+        );
+
+        questiontf2.check();
+
+        Question questiontf3 = new TrueFalseQuestion(
+                "'A' is the most common letter used in the English language ",
+                "FALSE"
+        );
+
+        questiontf3.check();
+
+        Question questiontf4 = new TrueFalseQuestion(
+                "In Harry Potter, Draco Malfoy has no siblings",
+                "FALSE"
+        );
+
+        questiontf4.check();
+
+        Question questiontf5 = new TrueFalseQuestion(
+                "Bananas are curved because they grow upwards towards the sun",
+                "TRUE"
+        );
+
+        questiontf5.check();
+
+        Question question1 = new MultipleChoiceQuestion(
                 "What's a quiz?",
                 "a test of knowledge, especially a brief informal test given to students",
                 "42",
@@ -13,7 +48,7 @@ public class Quiz {
 
         question1.check();
 
-        MultipleChoiceQuestion question2 = new MultipleChoiceQuestion(
+        Question question2 = new MultipleChoiceQuestion(
                 "When is a quiz?",
                 "a long, long ago",
                 "right now",
@@ -24,7 +59,7 @@ public class Quiz {
 
         question2.check();
 
-        MultipleChoiceQuestion question3 = new MultipleChoiceQuestion(
+        Question question3 = new MultipleChoiceQuestion(
                 "Where is a quiz?",
                 "a galaxy far, far away",
                 "under the sea",
@@ -35,7 +70,7 @@ public class Quiz {
 
         question3.check();
 
-        MultipleChoiceQuestion question4 = new MultipleChoiceQuestion(
+        Question question4 = new MultipleChoiceQuestion(
                 "What's the mass of sun",
                 "1.8991 * 10^30 kg",
                 "1.8991 * 10^28 kg",
@@ -46,7 +81,7 @@ public class Quiz {
 
         question4.check();
 
-        MultipleChoiceQuestion question5 = new MultipleChoiceQuestion(
+        Question question5 = new MultipleChoiceQuestion(
                 "What year the human traveled into space for the first time?",
                 "1951",
                 "1961",
